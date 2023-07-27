@@ -17,7 +17,7 @@ const InformationPage = () => {
     <section className="w-full h-full relative">
       <LeftInfoPage title="Información" />
 
-      <div className="lg:min-h-screen w-full h-full grid grid-cols-1 grid-rows-[auto,_auto,_auto,_auto,_300px] lg:grid-cols-3 lg:grid-rows-[auto,_2fr,_1fr] lg:gap-4 gap-y-4">
+      <div className="lg:min-h-[calc(100vh-32px)] w-full lg:h-full grid grid-cols-1 grid-rows-[auto,_auto,_auto,_auto,_300px] lg:grid-cols-3 lg:grid-rows-[auto,_2fr,_1fr] lg:gap-4 gap-y-4">
         <Navbar />
 
         <BoxInfo
