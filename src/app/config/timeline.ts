@@ -44,6 +44,6 @@ export const timeLineJobs: ITimeLineItem[] = [
     time: "2023-2023",
     title: "Programador React",
     content:
-      "Desarrollador flutter independiente para crear una interfaz de una App de administración de casos de abogados.",
+      "Desarrollador React independiente para crear una interfaz de una App de administración de casos de abogados.",
   },
 ];
