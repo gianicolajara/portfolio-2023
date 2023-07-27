@@ -3,7 +3,7 @@ import P from "../P";
 
 const Footer = () => {
   return (
-    <footer className="mt-6 w-full">
+    <footer className="mt-4 w-full">
       <BoxInfo className="p-4 flex justify-center items-center">
         <P>
           Creador por{" "}
