@@ -34,7 +34,7 @@ const InformationPage = () => {
           smallLabel="Programación"
           className="col-span-1 row-span-1"
         >
-          <div className="w-full h-full flex justify-center items-center">
+          <div className="w-full h-full flex justify-center items-center p-2">
             <IconsTech />
           </div>
         </BoxInfo>

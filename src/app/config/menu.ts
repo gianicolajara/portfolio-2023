@@ -14,14 +14,14 @@ export const menuItems: IMenuItem[] = [
   {
     id: 3,
     label: "Proyectos",
-    url: "/Projects",
+    url: "/projects",
   },
 ];
 
 export const menuEclipseItem: IMenuItemEclipse[] = [
   {
     id: 1,
-    label: "Legacy Page",
+    label: "Pagina Antigua",
     onClick: () => {},
     url: "https://gianicola-web.vercel.app/",
   },

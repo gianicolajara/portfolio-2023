@@ -6,19 +6,20 @@ type Props = {
   getReferencesProps?: Record<string, unknown>;
   active?: boolean;
   id?: string;
+  className?: string;
 };
 
 const IconButton = forwardRef<HTMLButtonElement, Props>(
-  ({ children, getReferencesProps, onClick, active, id }, ref) => {
+  ({ children, getReferencesProps, onClick, active, id, className }, ref) => {
     return (
       <button
         id={id}
         onClick={onClick}
         ref={ref}
         {...getReferencesProps}
-        className={`p-2 hover:bg-gray-light ${
+        className={`p-1 w-[35px] h-[35px] hover:bg-gray-light relative flex justify-center items-center ${
           active ? "bg-gray-light" : ""
-        } rounded-full transition-all`}
+        } border-2 border-gray-light rounded-lg transition-all ${className}`}
       >
         {children}
       </button>

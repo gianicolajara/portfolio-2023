@@ -10,7 +10,7 @@ const TagTitle = ({ title, content }: Props) => {
   return (
     <Tag>
       <P>
-        <strong className="text-primary">{title}:</strong> {content}
+        <strong className="text-title">{title}:</strong> {content}
       </P>
     </Tag>
   );

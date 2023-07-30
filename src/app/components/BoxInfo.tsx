@@ -16,13 +16,11 @@ const BoxInfo = ({
   className,
   hoverAnimations = false,
 }: Props) => {
-  const hoverAnimationsStyles = hoverAnimations
-    ? "hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all"
-    : "";
-
   return (
     <div
-      className={`bg-background-light border-2 border-gray-light rounded-lg w-full h-full flex flex-col ${className} ${hoverAnimationsStyles}`}
+      className={`bg-background-light border-2 transition-all border-gray-light rounded-lg w-full h-full flex flex-col ${className} ${
+        hoverAnimations ? "hover:border-primary" : ""
+      }`}
     >
       {title && (
         <div className="border-b-2 border-gray-light p-4 flex items-center">

@@ -5,6 +5,7 @@ import {
   useFloating,
   useInteractions,
 } from "@floating-ui/react";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { HiOutlineEllipsisVertical } from "react-icons/hi2";
 import IconButton from "../IconButton";
@@ -61,26 +62,32 @@ const EclipseMenu = ({ items }: Props) => {
           id="eclipse-button"
         />
       </IconButton>
-      {open && (
-        <div
-          id="eclipse"
-          className="bg-background-light border-2 border-gray-light text-font p-2 rounded-lg z-[999]"
-          style={floatingStyles}
-          ref={refs.setFloating}
-          {...getFloatingProps()}
-        >
-          <ul className="w-full h-full flex flex-col">
-            {items.map(({ id, label, onClick, url }) => (
-              <ItemMenu
-                label={label}
-                key={id}
-                onClick={() => handleClickItem(onClick)}
-                url={url}
-              />
-            ))}
-          </ul>
-        </div>
-      )}
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, top: -10 }}
+            animate={{ opacity: 1, top: 0 }}
+            exit={{ opacity: 0, top: -10 }}
+            id="eclipse"
+            style={floatingStyles}
+            ref={refs.setFloating}
+            className="bg-background-light border-2 border-gray-light text-font p-2 rounded-lg z-[999]"
+            {...getFloatingProps()}
+          >
+            <ul className="w-full h-full flex flex-col">
+              {items.map(({ id, label, onClick, url }) => (
+                <ItemMenu
+                  label={label}
+                  key={id}
+                  onClick={() => handleClickItem(onClick)}
+                  url={url}
+                />
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };

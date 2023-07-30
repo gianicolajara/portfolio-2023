@@ -13,15 +13,16 @@ body {
   box-sizing: inherit;
 }
 
+
 :root {
-  --primary: #e84545;
-  --secondary: #b23e55;
-  --background: #2b2e4a;
-  --background-light: #53354a;
-  --gray-light: #89565f;
-  --title: #fff;
-  --font: #fff;
-  --circle: #2b2e4a;
-  --circle-light: #d68528;
-  --icon: #fff;
+  --primary: #00ADB5;
+  --secondary: #008F95;
+  --background: #222831;
+  --background-light: #393E46;
+  --gray-light: #464C56;
+  --title: #f0f0f0;
+  --font: #bdc1c6;
+  --circle: #1F1F1F;
+  --circle-light: #00ADB5;
+  --icon: #FFF;
 }
