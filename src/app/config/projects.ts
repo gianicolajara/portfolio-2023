@@ -1,6 +1,7 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { BiCoffeeTogo, BiGame, BiSolidBuilding, BiWalk } from "react-icons/bi";
+import { BiCoffeeTogo, BiGame, BiWalk } from "react-icons/bi";
 import { GiBigWave } from "react-icons/gi";
+import { SiGodaddy } from "react-icons/si";
 import { TbDogBowl } from "react-icons/tb";
 import { IProjectItem } from "../types/interfaces/project";
 
@@ -56,10 +57,10 @@ export const projectsExperience: IProjectItem[] = [
   },
   {
     id: 7,
-    title: "Administración",
-    content: "App para la administración de ingresos y egresos",
-    Icon: BiSolidBuilding,
-    image: "/images/administration.jpg",
-    url: "https://administration-system-green.vercel.app/",
+    title: "GoDaddy clone",
+    content: "Clon de godaddy",
+    Icon: SiGodaddy,
+    image: "/images/godaddyclone.png",
+    url: "https://gianicolajara.github.io/godaddy-clone/",
   },
 ];
